@@ -4,8 +4,8 @@ from scrapy import Request
 class QuotesSpider(scrapy.Spider):
     name = "results"
     def start_requests(self):
-        for i in range(126):
-            yield Request('http://eciresults.nic.in/ConstituencywiseS03%s.htm?ac=%s' % (i,i), callback=self.parse)
+        for i in range(403):
+            yield Request('http://eciresults.nic.in/ConstituencywiseS24%s.htm?ac=%s' % (i,i), callback=self.parse)
 
     def parse(self, response):
 	results = response.css('#div1 > table > tr')
