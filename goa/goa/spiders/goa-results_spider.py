@@ -5,7 +5,7 @@ class QuotesSpider(scrapy.Spider):
     name = "results"
     def start_requests(self):
         for i in range(40):
-            yield Request('http://eciresults.nic.in/ConstituencywiseS03%s.htm?ac=%s' % (i,i), callback=self.parse)
+            yield Request('http://eciresults.nic.in/ConstituencywiseS05%s.htm?ac=%s' % (i,i), callback=self.parse)
 
     def parse(self, response):
 	results = response.css('#div1 > table > tr')
