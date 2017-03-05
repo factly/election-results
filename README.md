@@ -9,7 +9,8 @@
 
 ## Steps to run the scripts ##
 
-* cd into the state for which you would like to scrape the results. for eg: cd assam
+* cd into the state for which you would like to scrape the results. for eg if you want to scrape the election results for Assam: 
+    * cd assam
 * Execute the following command: 
     * scrapy crawl results -t csv  -o - > results.csv
     * scrapy crawl results -t csv --nolog -o - > results.csv (If you prefer executing the script without logging on the console)
