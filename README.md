@@ -9,15 +9,13 @@
 
 ## Steps to run the scripts ##
 
-* cd into the state for which you would like to scrape the results. for eg if you want to scrape the election results for Assam: 
-    * cd assam
-* Execute the following command for the results for constituency-wise all candidates: 
+* Execute the following command for the results for constituency-wise all candidates (for eg: assam): 
     * cd assam && scrapy crawl cw-all-candidates -a endpoint=archive -t csv -o - > ../results/assam-cw-all-candidates.csv && cd .. (This is for the live results)
     * cd assam && scrapy crawl cw-all-candidates -a endpoint=archive -t csv -o - > ../results/assam-cw-all-candidates.csv && cd .. (This is for the archived results)
     
     * cd assam && scrapy crawl cw-all-candidates -a endpoint=live --nolog -t csv -o - > ../results/assam-cw-all-candidates.csv && cd .. (If you prefer executing the script without logging on the console)
     
-* Execute the following command for the constituency-wise trends: 
+* Execute the following command for the constituency-wise trends (for eg: assam): 
     * cd assam && scrapy crawl cw-trends -a endpoint=live -t csv -o - > ../results/assam-cw-trends.csv && cd .. (This is for the live results)
     * cd assam && scrapy crawl cw-trends -a endpoint=archive -t csv -o - > ../results/assam-cw-trends.csv && cd .. (This is for the archived results)
     
