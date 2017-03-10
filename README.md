@@ -22,8 +22,8 @@
     * cd assam && scrapy crawl cw-trends -a endpoint=live --nolog -t csv -o - > ../results/assam-cw-trends.csv && cd .. (If you prefer executing the script without logging on the console)
 
 * Execute the following command to get the party-wise results for all states: 
-    * cd pwresults && scrapy crawl pw-results -a endpoint=live -t csv -o - > ../results/assam-pw-results.csv && cd .. (This is for the live results)
-    * cd pwresults && scrapy crawl pw-results -a endpoint=archive -t csv -o - > ../results/assam-pw-results.csv && cd .. (This is for the archived results)
+    * cd pwresults && scrapy crawl pw-results -a endpoint=live -t csv -o - > ../results/pw-results.csv && cd .. (This is for the live results)
+    * cd pwresults && scrapy crawl pw-results -a endpoint=archive -t csv -o - > ../results/pw-results.csv && cd .. (This is for the archived results)
     
     * cd pwresults && scrapy crawl pw-results -a endpoint=live --nolog -t csv -o - > ../results/pw-results.csv && cd .. (If you prefer executing the script without logging on the console)
     
